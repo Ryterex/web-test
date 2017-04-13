@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Triangle
+	</title>
+	<link rel="stylesheet" href="herc.css">
+</head>
+<body>
+	
+
+	<img src = "triangle.jpg" width = "400px">
+	<p> The area of the triangle desribed is: <span id="area"></span> !</p>
+
+	<script>
+		var side1 = parseInt(prompt("What is the length of side 1 of the triangle?"));
+		var side2 = parseInt(prompt("What is the length of side 2 of the triangle?"));
+		var side3 = parseInt(prompt("What is the length of side 3 of the triangle?"));
+		var perimeter = (side1 + side2 + side3)/2;
+		var area =  Math.sqrt(perimeter*((perimeter-side1)*(perimeter-side2)*
+			(perimeter-side3)));
+		console.log(area);
+		document.getElementById("area").innerHTML = area;
+
+	</script>
+
+</body>
+</html>
+
